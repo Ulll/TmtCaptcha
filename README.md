@@ -13,21 +13,33 @@ enjoy it!!!
 require_once './Captcha.php';
 
 $config = array(
-  'img_path' => $this->_img_path,
-  'img_url' => $this->_img_url,
-  'minWordLength' => $this->_minWordLength,
-  'maxWordLength' => $this->_maxWordLength,
+  'img_path' => '/Users/xy/workspace/blog/captcha/images/',
+  'img_url' => 'http://.....captcha/images/',
+  'minWordLength' => 4,
+  'maxWordLength' => 5,
   'fonts' => array(
       'VeraSansBold' => array('spacing' => 0, 'minSize' => 18, 'maxSize' => 18, 'font' => 'VeraSansBold.ttf')
   ),
-  'width' => $this->_width,
-  'height' => $this->_height,
-  'expiration' => $this->_expiration,
+  'width' => 120,
+  'height' => 60,
+  'expiration' => 60,
 );
 $cap = new TMTCaptcha($config);
 $captcha = $cap->createImage();
 
 ```
+
+##support config
+
+`img_path` - the captcha images stored location
+`img_url` - the captcha images url prefix
+`minWordLength` - the min word number show in the images
+`maxWordLength` - the max word number show in the images
+`fonts` - you can set a lot of font in the object
+`width` - the image width
+`height` - the image height
+`expiration` - the image liftime , when expired , the old images will deleted automatically
+
 
 ##example
 
