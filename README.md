@@ -4,8 +4,6 @@
 
 This library based on [cool-captcha](https://code.google.com/p/cool-php-captcha/)
 
-enjoy it!!!
-
 ##usage
 
 ```php
@@ -31,14 +29,14 @@ $captcha = $cap->createImage();
 
 ##support config
 
-`img_path` - the captcha images stored location
-`img_url` - the captcha images url prefix
-`minWordLength` - the min word number show in the images
-`maxWordLength` - the max word number show in the images
-`fonts` - you can set a lot of font in the object
-`width` - the image width
-`height` - the image height
-`expiration` - the image liftime , when expired , the old images will deleted automatically
+* `img_path` - the captcha images stored location
+* `img_url` - the captcha images url prefix
+* `minWordLength` - the min word number show in the images
+* `maxWordLength` - the max word number show in the images
+* `fonts` - you can set a lot of font in the object
+* `width` - the image width
+* `height` - the image height
+* `expiration` - the image liftime , when expired , the old images will deleted automatically
 
 
 ##example
