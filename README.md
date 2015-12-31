@@ -8,7 +8,7 @@ This library based on [cool-captcha](https://code.google.com/p/cool-php-captcha/
 
 ```php
   
-require_once './Captcha.php';
+require_once './TMTCaptcha.php';
 
 $config = array(
   'img_path' => '/Users/xy/workspace/blog/captcha/images/',
