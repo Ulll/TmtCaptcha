@@ -37,6 +37,12 @@ $captcha = $cap->createImage();
 * `width` - the image width
 * `height` - the image height
 * `expiration` - the image liftime , when expired , the old images will deleted automatically
+* `lines` - the disturb lines number on the image
+* `spots` - the disturb pixel number on the image
+* `backgroundColor` - the backgroundColor of the image eg:array(255, 255, 255)
+* `colors` - the font color eg : array(array(27,  78,  181), array(22,  163, 35),array(214, 36,  7))
+* `lineWidth` - Horizontal line number through the text, default : 0
+
 
 
 ##example
