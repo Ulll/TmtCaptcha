@@ -1,7 +1,16 @@
 # heil.captcha
 
+##usage
 
-#example
+```php
+  
+require_once './Captcha.php';
+$cap = new TMTCaptcha($vals);
+$captcha = $cap->createImage();
+
+```
+
+##example
 
 ![example1](https://github.com/Ulll/heil.captcha/blob/master/example/1451531306.8061.jpg)
 ![example2](https://github.com/Ulll/heil.captcha/blob/master/example/1451531331.0574.jpg)
