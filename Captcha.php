@@ -3,19 +3,19 @@
 class TMTCaptcha
 {   
     /**
-     * 验证码失效时间.过期后图片会被删除
+     * expire time, old images will deleted automatically
      * @var integer
      */
     public $expiration = 7200;
 
     /**
-     * 干扰线数量
+     * interfering line number
      * @var integer
      */
     public $lines = 3;
 
     /**
-     * 干扰点数量
+     * interference spots number
      * @var integer
      */
     public $spots = 20;
@@ -279,9 +279,9 @@ class TMTCaptcha
     protected function drawLine()
     {
         for($i = 0;$i < $this->lines;$i++){
-            //分配颜色
+            //rand color
             $line= imagecolorallocate($this->im,mt_rand(100,200),mt_rand(100,200),mt_rand(100,200));
-            //制作线段
+            //generate
             imageline($this->im,mt_rand(0,$this->width),mt_rand(0,$this->height),mt_rand(0,$this->width),mt_rand(0,$this->height),$line);
         }
     }
@@ -291,9 +291,9 @@ class TMTCaptcha
      */
     protected function getPixels(){
         for($i = 0;$i < $this->spots;$i++){
-            //分配颜色
+            //rand color
             $pixel= imagecolorallocate($this->im,mt_rand(100,200),mt_rand(100,200),mt_rand(100,200));
-            //制作
+            //generate
             imagesetpixel($this->im,mt_rand(0,$this->width),mt_rand(0,$this->height),$pixel);
         }
     }
