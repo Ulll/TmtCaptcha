@@ -1,10 +1,10 @@
-# heilcaptcha
+# TmtCaptcha
 
-##description
+###description
 
 This library based on [cool-captcha](https://code.google.com/p/cool-php-captcha/)
 
-##usage
+###usage
 
 ```php
   
@@ -27,7 +27,7 @@ $captcha = $cap->createImage();
 
 ```
 
-##support config
+###support config
 
 * `img_path` - the captcha images stored location
 * `img_url` - the captcha images url prefix
